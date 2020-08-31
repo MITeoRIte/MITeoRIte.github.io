@@ -1,3 +1,5 @@
+/* CSS files add styling rules to your content */
+
 body {
   font-family: montserrat, sans-serif;
   letter-spacing: 0.7px;
@@ -33,6 +35,8 @@ body {
   color: #2a5074;
 }
 
+
+
 .main {
   position: relative;
   float: right;
@@ -60,6 +64,40 @@ body {
   
 }
 
+
+.variabletext {
+  background-position: 0% 100%;
+  border-bottom: 3px solid #2a5074;
+  padding-right: 2px;
+  position: relative;
+  transition: background-position 1s;
+}
+
+.variabletext::after {
+  animation: blink-cursor 0.75s step-end infinite;
+  background-color: transparent;
+  content: "";
+  display: block;
+  height: 1em;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2px;
+}
+
+.variabletext.highlight {
+  background-image: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 0.2) 50%,
+    transparent 50%
+  );
+  background-position: 100% 100%;
+  background-size: 200% 1em;
+}
+
+.variabletext.highlight::after {
+  animation: none;
+}
 
 
 .article {
