@@ -1,3 +1,103 @@
-h1 {
-  color: fuchsia;
+body {
+  font-family: montserrat, sans-serif;
+  letter-spacing: 0.7px;
+  color: #1B2A3D;
+  margin: 0px;
+}
+
+.navigation {
+  background-color: #2a5074;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 20%;
+  padding: 0px;
+}
+
+.navigation a {
+  display: block;
+  padding: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0px;
+}
+
+.navigation a:hover {
+  background: #cce7e8;
+  transition: 0.5s;
+  color: #2a5074;
+}
+
+.main {
+  position: relative;
+  float: right;
+  width: 80%;
+  height: 200vh;
+  background-color: rgb(223, 223, 225);
+  
+  /* background: url(https://cdn.glitch.com/c518b7a8-124f-4180-a44c-210403e77088%2Fworkspace-with-brick-wall-in-office-royalty-free-image-909223304-1566845696.jpg?v=1598021477289*/) no-repeat;*/
+}
+
+.firstpage {
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+  align-items: center;
+  display: block;
+}
+
+.firstpagetext{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  padding: 30px;
+  font-size: 26px;
+  
+}
+
+
+
+.article {
+  border-bottom: solid 2px grey;
+}
+
+.article h3 {
+  font-weight: bold;
+  padding: 30px;
+  padding-bottom: 0px;
+}
+
+.date {
+  color: #717485;
+  text-transform: uppercase;
+  font-size: 12px;
+  display: inline;
+}
+
+.article p {
+  padding: 3px;
+}
+
+
+/* Blur picture for background
+https://cdn.glitch.com/c518b7a8-124f-4180-a44c-210403e77088%2Fworkspace-with-brick-wall-in-office-royalty-free-image-909223304-1566845696.jpg?v=1598021477289*/
+
+/* making an element stay at a fixed spot on the viewport, use "fixed"
+/*
+
+/* for profile picture */
+
+#name{
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  border: solid 0.5px white;
+  margin: 10px;
+  text-transform: uppercase;
 }
