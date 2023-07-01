@@ -1,8 +1,3 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
-
-// prints "hi" in the browser's dev tools console
-console.log("hi");
 
 const words = ["Computer Science student at NUS.", "nerd.", "coding beginner.", "piano noob."];
 const typeEl = document.querySelector(".variabletext");
